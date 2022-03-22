@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+  - name: i want to install wget
+    apt:
+     name: wget
+     state: present
