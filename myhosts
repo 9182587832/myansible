@@ -2,10 +2,9 @@
 [mywebservers]
 172.31.15.198
 172.31.6.239
-
+172.31.28.69
 
 [mywebservers:vars]
 myjavapaconubuntu=  openjdk-8-jre
 myjavapaconredhat=  java-1.8.0-openjdk
 
-172.31.28.69
