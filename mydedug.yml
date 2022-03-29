@@ -1,0 +1,19 @@
+---
+- hosts: 172.31.28.69
+  become: yes
+  tasks:
+  -  name: i want to execute linux command
+     command: hostname -f
+     regsiter: myResult
+
+
+  - name: i want to display myfrist task myResult
+    deg:
+     msg: "{{myResult}}"   
+
+
+
+
+
+
+
