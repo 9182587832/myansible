@@ -1,5 +1,5 @@
 ---
-- hosts:  mywebservers
+- hosts:  172.31.28.69
   become: yes
   tasks:
   - name: i want to install java on ubuntu nodes
@@ -9,8 +9,4 @@
     when: ansible_os_family =="Debain"
 
 
-  - name: i want to install java  on RedHat nodes
-    apt: 
-      name: "{{myjavapaconredhat}}"
-      state: present
-    when: ansible_os_family =="RedHat"
+  
