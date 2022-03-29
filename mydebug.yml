@@ -11,6 +11,17 @@
     debug:
      msg: "{{myResult}}"   
 
+  - name: i want install git
+    apt:
+      name: git
+      state: present
+    when: myResult.stderr =="" 
+
+  - name: i want to install tree
+    apt:
+      name: tree
+      state: present
+    when: myResult.stderr !=""        
 
 
 
