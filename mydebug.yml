@@ -8,7 +8,7 @@
 
 
   - name: i want to display myfrist task myResult
-    deg:
+    debug:
      msg: "{{myResult}}"   
 
 
