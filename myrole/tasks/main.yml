@@ -4,7 +4,6 @@
   apt: 
    name: apache2
    state: present
-
 - name: copy indexfile
   template:
        src: template/index.j2
