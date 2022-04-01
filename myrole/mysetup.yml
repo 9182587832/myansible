@@ -2,4 +2,4 @@
 - hosts: 172.31.28.69
   become: yes
   role:
-   - {{role: myrole, when: ansible_os_family =="Debain"}}
+   - {role: myrole, when: ansible_os_family =="Debain"}
