@@ -1,6 +1,0 @@
----
-# handlers file for wywebrole1
-- name: restatredwebserver
-  service:
-     name: apache2
-     state: restarted
