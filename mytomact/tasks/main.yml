@@ -1,2 +1,8 @@
 ---
 # tasks file for mytomact
+- inculde_tasks: installjava.yml
+- inculde_tasks: createtomcatuser.yml
+- inculde_tasks: installtomcat.yml
+- inculde_tasks: updatepermissions.yml
+
+
