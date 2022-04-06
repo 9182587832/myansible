@@ -1,5 +1,5 @@
 ---
-# tasks file for mytomact
+# tasks file for mytomcat
 - inculde_tasks: installjava.yml
 - inculde_tasks: createtomcatuser.yml
 - inculde_tasks: installtomcat.yml
