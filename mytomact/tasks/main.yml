@@ -4,5 +4,7 @@
 - inculde_tasks: createtomcatuser.yml
 - inculde_tasks: installtomcat.yml
 - inculde_tasks: updatepermissions.yml
+- inculde_tasks: tomcatservice.yml
+- inculde_tasks: starttomcat.yml
 
 

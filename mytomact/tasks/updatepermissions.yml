@@ -5,3 +5,55 @@
     recurse: yes
     group: tomcat 
     state: directory
+
+
+- name: give the tomcat group read access to the conf directory
+  files: 
+    path: /opt/tomcat/conf
+    recures: yes
+    mode: g+r
+    state:  directory 
+
+- name:  give the tomcat group read execute to the conf directory   
+  files: 
+    path: /opt/tomcat/conf
+    mode: g+x 
+    state: directory
+
+- name: Make the tomcat user the owner of the webapps
+  files: 
+    path:   /opt/tomcat/webapps/
+    recures: yes
+    owner: tomcat
+    state:  directory
+
+- name: Make the tomcat user the owner of the work
+  files: 
+    path: /opt/tomcat/work/
+    recures: yes
+    owner: tomcat
+    state:  directory 
+
+
+- name: Make the tomcat user the owner of the temp 
+  files: 
+    path: /opt/tomcat/temp/
+    recures: yes
+    owner: tomcat
+    state:  directory
+
+- name: Make the tomcat user the owner of the logs
+  files: 
+  path: /opt/tomcat/logs/
+  recures: yes
+  owner: tomcat
+  state:  directory
+
+
+
+
+
+
+
+
+    

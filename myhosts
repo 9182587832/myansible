@@ -6,3 +6,7 @@
 myjavapaconubuntu=  openjdk-8-jre
 myjavapaconredhat=  java-1.8.0-openjdk
 
+[myapplicationservers]
+172.31.28.69
+
+

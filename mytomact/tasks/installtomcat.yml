@@ -2,7 +2,7 @@
 - name: i want to download tomcat tar file
   get_url:
     url: http://example.com/path/file.confhttps://archive.apache.org/dist/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
-    dest: /home/apache-tomcat-8.5.5.tar.gz
+    dest: /home/ubuntu/apache-tomcat-8.5.5.tar.gz
     force_basic_auth: yes
     
 
@@ -10,10 +10,10 @@
 - name: create tomcat directory
   file: 
     path: /opt/tomcat 
-    state: present 
+    state: directory
 
 
 - name: i want extract tar file 
-  unarchive:
-     src: /home/apache-tomcat-8.5.5.tar.gz 
-     dest: /opt/tomcat        
+  command:
+       cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-8.5.5.ta -C /opt/tomcat --strip-components=1
+       creates: /opt/tomcat
