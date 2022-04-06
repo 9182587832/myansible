@@ -1,10 +1,10 @@
 ---
 # tasks file for mytomcat
--  inculde_tasks: installjava.yml
--  inculde_tasks: createtomcatuser.yml
--  inculde_tasks: installtomcat.yml
--  inculde_tasks: updatepermissions.yml
--  inculde_tasks: tomcatservice.yml
--  inculde_tasks: starttomcat.yml
+-  inculde-tasks: installjava.yml
+-  inculde-tasks: createtomcatuser.yml
+-  inculde-tasks: installtomcat.yml
+-  inculde-tasks: updatepermissions.yml
+-  inculde-tasks: tomcatservice.yml
+-  inculde-tasks: starttomcat.yml
 
 
